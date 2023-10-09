@@ -1,0 +1,45 @@
+body, html {
+  height: 100%;
+}
+
+.top{
+  /* The heading */
+  background-color: rgb(23, 23, 24);
+  padding: 1.65em 2.5em;
+  font-size: 30px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-align: center;
+  
+}
+.mid{
+  /* The middle description */
+  text-align: center;
+
+}
+hr.dashed {
+  /* For the dashed line */
+  border-top: 3px dashed #bbb;
+}
+.parallax {
+  /* The image used */
+  background-image: url('img.jpeg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+
